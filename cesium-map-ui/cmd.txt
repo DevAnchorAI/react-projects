@@ -1,0 +1,5 @@
+#npm create vite@latest cesium-map-ui -- --template react
+
+#npm install
+#npm install --save cesium resium
+#npm install --save-dev vite-plugin-cesium
