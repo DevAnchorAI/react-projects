@@ -1,4 +1,7 @@
-const API_URL = "http://localhost:8080/api/chat";
+//const API_URL = "http://localhost:8080/api/chat";
+//const API_URL = "http://localhost:8080/api/mcpChat";
+//const API_URL = "http://localhost:8080/api/chatAgent";
+const API_URL = `${import.meta.env.VITE_API_URL}/api/chatAgent`;
 
 export async function sendMessage(conversationId, question) {
 
@@ -20,6 +23,5 @@ export async function sendMessage(conversationId, question) {
             `Backend request failed: ${response.status}`
         );
     }
-
     return response.json();
 }
